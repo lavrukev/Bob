@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url(../img/head.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+}
+.wrap {
+	width: 900px;
+	padding: 250px 0 0 200px;
+}
+/*PROPERTIES FOR NAV*/
+nav {
+	width: 225px;
+	float: left;
+	color: #666666;
+	background-image: url(../img/left.jpg);
+	background-repeat: repeat-y;
+	font-size: 18px;
+	font-weight: bold;
+}
+ul {
+	margin: 20px 0 20px 0;
+}
+li {
+	list-style-type: none;
+	color: #661d18;
+	border-bottom: 1px dotted #ccc;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 9px 0 9px 9px;
+
+}
+a {
+	text-decoration: none;
+	color: #661d18;
+	padding: 10px 20px 30px 10px;
+}
+/*PROPERTIES FOR ARTICLE*/
+article {
+	width: 600px;
+	float: left;
+	margin-left: 60px;
+	font-family: Georgia, serif;
+
+}
+h1 {
+	color: #d40000;
+	font-size: 24px;
+	padding: 2px 0 2px 7px;
+}
+p {
+	padding: 10px 0;
+	font-family: "Helvetica Neue", Helvetica, Verdana, sans-serif;
+	word-spacing: 2px;
+	line-height: 130%;
+}
+p:first-letter {
+	color: #d40000;
+	font-size: 35px;
+	padding: 8px 5px 0 0;
+	font-weight: bold;
+	font-family: cursive;
+	/*line-height: 10;*/
+	float: left;
+}
+.clear {
+	clear: both;
+}
+.like, .unlike {
+	border-radius: 1%;
+	width: 150px;
+	height: 35px;
+	color: #535353;
+}
+/*
+.like:hover {
+	content: "Мне нравится";
+	color: #0071ac;
+	opacity: 0.8;
+}*/
+.like::before {
+	content: "\2764";
+	color:#0071ac;
+	margin-right: 5px;
+}
+.unlike::before {
+	content: "\2764";
+	color: #c92f74;
+	margin-right: 5px;
+ }
+
+/*P;ROPERTIES FOR SEARCH*/
+input[placeholder]:before {
+	content: "Я";
+	color: #d40000;
+}
+/*PROPERTIES FOR FOOTER BACKGROUND*/
+footer {
+	background-image: url(../img/footer.jpg);
+	height: 150px;
+}
